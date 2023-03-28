@@ -1,9 +1,6 @@
 export class ResultsPage {
     selectProduct() {
-        cy.get('[data-index="1"][data-cel-widget="search_result_1"]')
-            .parents('#search')
-            .find('.a-price-whole')
-            .first().click()
+        cy.get('[data-image-index="1"]').first().click()
     }
 }
 

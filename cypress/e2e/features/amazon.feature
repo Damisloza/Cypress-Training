@@ -3,23 +3,13 @@ Feature: Amazon search
     Background:
         Given I navigate to Amazon
 
-    Scenario: iPhone 14 Pro search
-        When In the searchBar type iPhone 14 Pro and search
-            | product   |
-            | iPhone 14 |
+    Scenario Outline: Search items in Amazon ('<product>')
+        When In the searchBar type '<product>' and search
         When In the resultPage click in first resultPage
         Then Print price
 
-    Scenario: Macbook Air search
-        When In the searchBar type iPhone 14 Pro and search
-            | product     |
-            | Macbook Air |
-        When In the resultPage click in first resultPage
-        Then Print price
-
-    Scenario: Samsung Galaxy S23 search
-        When In the searchBar type iPhone 14 Pro and search
-            | product     |
+        Examples:
+            | product            |
+            | iPhone 14 pro max  |
+            | Macbook Air M2     |
             | Samsung Galaxy S23 |
-        When In the resultPage click in first resultPage
-        Then Print price
