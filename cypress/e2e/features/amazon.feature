@@ -11,5 +11,5 @@ Feature: Amazon search
         Examples:
             | product            |
             | iPhone 14 pro max  |
-            | Macbook Air M2     |
+            | Macbook Air M1     |
             | Samsung Galaxy S23 |
