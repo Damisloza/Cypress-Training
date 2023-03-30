@@ -13,3 +13,5 @@ Feature: Amazon search
             | iPhone 14 pro max  |
             | Macbook Air M1     |
             | Samsung Galaxy S23 |
+
+    
