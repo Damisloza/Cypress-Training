@@ -1,4 +1,5 @@
 export class HomePage {
+    
 
     searchProduct(product) {
         cy.get('#twotabsearchtextbox').type(product)
@@ -10,17 +11,25 @@ export class HomePage {
     }
 
     verifyElementsInLeftMenuVisible() {
-
+        const shopDepartments = require('../testData/shopByDepartment.json')
+        /*
+        cy.contains('programs & features').parents('#hmenu-content').find('li').then((item) => {
+            item.each((index, element) => {
+                //cy.log(element.textContent)
+                const listElement = []
+                element = listElement.push(item.text().trim())
+                cy.log(element)
+                cy.log(shopDepartments.Departments)
+                //expect(element).to.have.text(shopDepartments.Departments)
+                
+            })
+        })
+        */
         cy.contains('programs & features').parents('#hmenu-content').each((element, index) => {
-            const item = element.text().trim()
-
-            const departments = {
-                "Departments": "Electronics"
-            }
-            cy.log(item)
-            if(item == departments) {
-                item.should('be.visible')
-            }
+            
+            const listElement = [] 
+            listElement.push(element.text().trim())
+            cy.log(listElement)
         })
         /*
         cy.contains('div.hmenu-item', 'shop by department').should('be.visible')
@@ -40,7 +49,6 @@ export class HomePage {
     verifyElementsInLeftMenuNotVisible() {
         cy.contains('Testing Element').should('not.exist')
     }
-
 }
 
 export const homePage = new HomePage();

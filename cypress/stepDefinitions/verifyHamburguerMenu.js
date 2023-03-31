@@ -2,7 +2,6 @@
 
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 import {homePage} from "../pages/amazon/homePage"
-const elements = require('../testData/shopByDepartment.json')
 
 Given('I navigate to Amazon II', () => {
     cy.visit('https://www.amazon.com/')

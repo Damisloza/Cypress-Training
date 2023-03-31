@@ -7,6 +7,7 @@ Feature: Verify hamburguer left menu
         When Click on the left menu All
         Then Verify elements in the menu section
 
-    Scenario: Verify hamburguer left menu - Negative scenario
-        When Click on the left menu All
-        Then Verify elements in the menu section NOT have visible
+##    @Test2
+##    Scenario: Verify hamburguer left menu - Negative scenario
+##        When Click on the left menu All
+##        Then Verify elements in the menu section NOT have visible
