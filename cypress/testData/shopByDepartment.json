@@ -1,3 +1,15 @@
 {
-    "Departments": ["Electronics", "Computers", "Smart Home", "Arts & Crafts"]
+    "Departments": [
+        "Electronics",
+        "Computers",
+        "Smart Home",
+        "Arts & Crafts"
+    ],
+    "Fail": [
+        "Electronics",
+        "Computers",
+        "Smart Home",
+        "Arts & Crafts",
+        "Testing Element"
+    ]
 }
