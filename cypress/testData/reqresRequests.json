@@ -1,0 +1,5 @@
+{
+    "POST": "api/users",
+    "PUT": "api/users/2",
+    "DELETE": "api/users/2"
+}
